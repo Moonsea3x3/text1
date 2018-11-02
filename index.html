@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d">
+        <div id="t"></div>
+    </div>
+
+<form id="main">
+  
+  选择文件:<input type="file" name="f" id="txt">
+  <input type="button" value="上传" id="btn">
+</form>
+<script>
+//在按钮上绑定点击事件   事件函数   获取文件对象 -- formdata  实例化对象 调用open方法  调用send方法
+document.getElementById('btn').onclick = function(){
+  var fm = document.getElementById('f');
+  var fd = new FormData(fm);
+}
+
+
+
+</script>
+</body>
+</html>
